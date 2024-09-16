@@ -1,16 +1,12 @@
-import React, { useState } from "react";
-// import DarkModeToggle from "./DarkModeToggle";
+import React from "react";
+
 
 interface NavbarProps {
   links: { label: string; href: string }[];
 }
 
 const Navbar: React.FC<NavbarProps> = ({ links }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <nav className="flex justify-center sticky bg-card   h-10 bg-dark-secondaryBg text-dark-primaryText z-10">
@@ -25,7 +21,6 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
             </li>
           ))}
         </ul>
-        {/* <DarkModeToggle /> */}
       </div>
     </nav>
   );
