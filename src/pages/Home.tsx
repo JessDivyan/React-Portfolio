@@ -1,5 +1,3 @@
-import React from "react";
-
 const Home = () => {
   return (
     <section className="h-screen  bg-dark-primaryBg  flex justify-center items-center overflow-hidden bg-image p-6">
